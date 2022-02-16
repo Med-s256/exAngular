@@ -1,0 +1,29 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nom</th>
+        <th scope="col">type</th>
+        <th scope="col">numero de ligne</th>
+        <th scope="col">number</th>
+        <th scope="col">file</th>
+        <th>icone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor= "let m of bugs">
+        <th scope="row">1</th>
+        <td>{{m.name}}</td>
+        <td>{{m.type}}</td>
+        <td>{{m.num_ligne}}</td>
+        <td><p [ngClass]="{red: m.type=== 'error', yellow: m.type === 'warning'}">{{m.number}}</p></td>
+        <td>{{m.file}}</td>
+        <td><mat-icon [ngClass]="{red: m.type=== 'error', yellow: m.type === 'warning'}">{{m.type}}</mat-icon></td>
+
+        
+      </tr>
+      
+      
+    </tbody>
+  </table>
+

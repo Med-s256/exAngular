@@ -1,0 +1,21 @@
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Specialisté</th>
+        <th scope="col">Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor= "let m of med">
+        <th scope="row">1</th>
+        <td>{{m.name}}</td>
+        <td>{{m.specialite}}</td>
+        <td>{{m.num_tel}}</td>
+      </tr>
+      
+      
+    </tbody>
+  </table>
